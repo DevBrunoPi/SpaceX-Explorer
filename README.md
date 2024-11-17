@@ -1,46 +1,90 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# SpaceX Explorer
 
-In the project directory, you can run:
+**SpaceX Explorer** é uma aplicação web que permite explorar os lançamentos espaciais da **SpaceX**. Através dessa aplicação, é possível pesquisar e visualizar detalhes sobre os lançamentos mais recentes, com um layout simples e responsivo.
 
-### `npm start`
+## Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React** (Biblioteca para a construção da interface)
+- **TypeScript** (Para tipagem estática)
+- **React Router** (Para navegação entre páginas)
+- **CSS/SCSS** (Para estilização)
+- **SpaceX API** (Fonte de dados para lançamentos espaciais)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Página de pesquisa**: Permite que o usuário busque lançamentos por nome e data.
+- **Detalhes do lançamento**: Ao clicar em um lançamento, o usuário será redirecionado para uma página com informações detalhadas sobre o lançamento selecionado.
+- **Layout responsivo**: A aplicação é responsiva, funcionando bem em dispositivos de diferentes tamanhos de tela.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar este projeto em sua máquina local, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1. Clone o repositório
 
-### `npm run eject`
+```bash
+git clone https://github.com/DevBrunoPi/SpaceX-Explorer.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### 2. Navegue para o diretório do projeto
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd SpaceX-Explorer
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 3. Instale as dependências
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+npm install
+```
 
-## Learn More
+### 4. Inicie o servidor de desenvolvimento
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+O projeto estará disponível em `http://localhost:3000` (ou outra porta, se configurado no arquivo `.env`).
+
+---
+
+## Uso
+
+- **Página de pesquisa**: Pesquise lançamentos espaciais usando o nome ou a data do lançamento.
+- **Página de detalhes**: Clique em um lançamento da pesquisa para ver mais detalhes sobre ele.
+
+---
+
+## Configuração de Ambiente
+
+Caso queira mudar a porta em que o aplicativo está rodando, siga os passos abaixo:
+
+1. **Crie ou edite o arquivo `.env`** na raiz do projeto.
+2. Adicione a variável `PORT` com o valor da porta desejada:
+   ```plaintext
+   PORT=3001
+   ```
+
+3. Reinicie o servidor de desenvolvimento com o comando `npm start`.
+
+---
+
+## Licença
+
+Este projeto é licenciado sob a MIT License - veja o arquivo [LICENSE] para mais detalhes.
+
+---
+
+## Créditos
+
+A API utilizada neste projeto é a **SpaceX API**, que fornece dados sobre lançamentos, cápsulas, foguetes, e outras informações relacionadas à SpaceX.
+
+- **SpaceX API**: [https://api.spacexdata.com](https://api.spacexdata.com)
+
+Agradecemos à equipe da SpaceX por disponibilizar essa API pública, que foi fundamental para o desenvolvimento deste projeto.
