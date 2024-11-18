@@ -14,7 +14,7 @@ const LaunchDetail: React.FC = () => {
   const [launch, setLaunch] = useState<Launch | null>(null);
 
   // Busca os detalhes do lançamento da API
-  const fetchLaunchDetail = async () => {
+  const buscarLançamentos = async () => {
     try {
       const response = await fetch(`https://api.spacexdata.com/v4/launches/${id}`);
       const data = await response.json();
@@ -25,7 +25,7 @@ const LaunchDetail: React.FC = () => {
   };
 
   useEffect(() => {
-    fetchLaunchDetail();
+    buscarLançamentos();
   }, [id]);
 
   if (!launch) {
